@@ -30,6 +30,9 @@
     // Cambridge Dictionary
     if (currentDomain.match(/dictionary\.cambridge\.org/) !== null) cambridgeDictionary();
 
+    // Google Classroom
+    if (currentDomain.match(/classroom\.google\.com/) !== null) googleClassroom();
+
     // Google Search
     if (fullPath.match(/www\.google\..*\/search/) !== null) googleSearch();
 
@@ -63,6 +66,18 @@
         }
     }
 
+    async function googleClassroom() {
+        let navbar = document.querySelector('nav.joJglb');
+        applyStyleToNavBar(navbar);
+
+        // wait until page is loaded
+        await sleep(5000)
+
+        // side menu
+        let sidemenu = document.querySelector('div.ETRkCe');
+        applyStyleToNavBar(sidemenu);
+    }
+
     function googleSearch() {
         // Finds the navigation bar
         let navBar = document.querySelector('div.sfbg'); // Google search
@@ -88,5 +103,9 @@
     function applyStyleToNavBar(navBar, applyWhiteBg = true) {
         navBar.style.background = applyWhiteBg ? commonStyles.whiteBackgroundColor : commonStyles.blackBackgroundColor;
         navBar.style.backdropFilter = commonStyles.backdropFilters;
+    }
+
+    function sleep(ms) {
+        return new Promise(resolve => setTimeout(resolve, ms));
     }
 })();
