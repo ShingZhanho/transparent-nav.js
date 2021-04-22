@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Transparent Navigation Bar
 // @namespace    http://tampermonkey.net/
-// @version      0.1.0.1
+// @version      0.1.0.2
 // @description  Transform supported site's navigation bar into an acrylic nav bar.
 // @author       Z.H. Shing
 // @match        https://*/*
@@ -57,6 +57,11 @@
         return;
     }
 
+    // YouTube
+    if (currentDomain.match(/www\.youtube\.com/) !== null) {
+        youTube();
+        return;
+    }
 
 
     // applies styles
@@ -111,6 +116,11 @@
         let navBar = document.querySelector('#topnav');
         navBar.style.background = 'rgba(95, 95, 95, 0.7)';
         navBar.style.backdropFilter = commonStyles.backdropFilters;
+    }
+
+    function youTube() {
+        let navBar = document.querySelector('ytd-masthead#masthead');
+        applyStyleToNavBar(navBar);
     }
 
 

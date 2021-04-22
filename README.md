@@ -18,7 +18,7 @@ A tampermonkey user script which generates webpages' navigation bar to acrylic-m
 		<td><img src="docs/trans-nav-readme-showcase-01.gif" alt="Effect preview 1"/><td>
 		<td><img src="docs/trans-nav-readme-showcase-02.gif" alt="Effect preview 2"/><td>
 	</tr>
-<table>
+</table>
 
 ## Compatibility
 The transparent effects rely on the `backdrop-filter` property of css. Thus, your browser need to support that property. Please note that Firefox does not support `backdrop-filter` by default, you may need to enable that option manually.
@@ -38,4 +38,6 @@ Here are the supported websites of this script:
 <tr><td>UK Royal Family Website</td><td><code>www.royal.uk</code></td><td></td></tr>
 
 <tr><td>W3Schools</td><td><code>www.w3schools.com</code></td><td></td></tr>
+
+<tr><td>YouTube</td><td><code>www.youtube.com</code></td><td></td></tr>
 </table>
