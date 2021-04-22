@@ -13,12 +13,14 @@ A tampermonkey user script which generates webpages' navigation bar to acrylic-m
 3. Encounters problems? Don't hesitate to ask on the [discussion page](https://github.com/ShingZhanho/transparent-nav.js/discussions)!
 
 ## Showcase
+Checkout the examples:
 <table>
 	<tr>
 		<td><img src="docs/trans-nav-readme-showcase-01.gif" alt="Effect preview 1"/><td>
 		<td><img src="docs/trans-nav-readme-showcase-02.gif" alt="Effect preview 2"/><td>
 	</tr>
 </table>
+
 
 ## Compatibility
 The transparent effects rely on the `backdrop-filter` property of css. Thus, your browser need to support that property. Please note that Firefox does not support `backdrop-filter` by default, you may need to enable that option manually.
