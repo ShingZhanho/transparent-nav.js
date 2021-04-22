@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Transparent Navigation Bar
 // @namespace    http://tampermonkey.net/
-// @version      0.1
+// @version      0.1.0.1
 // @description  Transform supported site's navigation bar into an acrylic nav bar.
 // @author       Z.H. Shing
 // @match        https://*/*
@@ -28,19 +28,34 @@
     // You should add supported sites here. All items shall be sorted alphabetically.
 
     // Cambridge Dictionary
-    if (currentDomain.match(/dictionary\.cambridge\.org/) !== null) cambridgeDictionary();
+    if (currentDomain.match(/dictionary\.cambridge\.org/) !== null) {
+        cambridgeDictionary();
+        return;
+    }
 
     // Google Classroom
-    if (currentDomain.match(/classroom\.google\.com/) !== null) googleClassroom();
+    if (currentDomain.match(/classroom\.google\.com/) !== null) {
+        googleClassroom();
+        return;
+    }
 
     // Google Search
-    if (fullPath.match(/www\.google\..*\/search/) !== null) googleSearch();
+    if (fullPath.match(/www\.google\..*\/search/) !== null) {
+        googleSearch();
+        return;
+    }
 
     // UK Royal Family
-    if (currentDomain.match(/www\.royal\.uk/) !== null) ukRoyalFamily();
+    if (currentDomain.match(/www\.royal\.uk/) !== null) {
+        ukRoyalFamily();
+        return;
+    }
 
     // W3Schools
-    if (currentDomain.match(/www\.w3schools\.com/) !== null) wThreeSchools();
+    if (currentDomain.match(/www\.w3schools\.com/) !== null) {
+        wThreeSchools();
+        return;
+    }
 
 
 
