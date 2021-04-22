@@ -16,8 +16,8 @@ A tampermonkey user script which generates webpages' navigation bar to acrylic-m
 Checkout the examples:
 <table>
 	<tr>
-		<td><img src="docs/trans-nav-readme-showcase-01.gif" alt="Effect preview 1"/><td>
-		<td><img src="docs/trans-nav-readme-showcase-02.gif" alt="Effect preview 2"/><td>
+		<td><img src="docs/trans-nav-readme-showcase-01.gif" alt="Effect preview 1"/></td>
+		<td><img src="docs/trans-nav-readme-showcase-02.gif" alt="Effect preview 2"/></td>
 	</tr>
 </table>
 
