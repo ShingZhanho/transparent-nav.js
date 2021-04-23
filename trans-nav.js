@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Transparent Navigation Bar
 // @namespace    http://tampermonkey.net/
-// @version      0.1.0.2
+// @version      0.1.0.3
 // @description  Transform supported site's navigation bar into an acrylic nav bar.
 // @author       Z.H. Shing
 // @match        https://*/*
@@ -121,6 +121,8 @@
     function youTube() {
         let navBar = document.querySelector('ytd-masthead#masthead');
         applyStyleToNavBar(navBar);
+        document.querySelector('#chips-wrapper').style.background = "rgba(200, 200, 200, 0.7)";
+        document.querySelector('#chips-wrapper').style.backdropFilter = commonStyles.backdropFilters;
     }
 
 
